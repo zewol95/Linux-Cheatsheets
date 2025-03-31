@@ -1,4 +1,4 @@
-# 📌 Linux Cheat-Sheet: Base Command
+# 📌 Base Command
 
 ## 🔹 Navigazione tra directory
 | Comando       | Descrizione |
