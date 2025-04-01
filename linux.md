@@ -1,106 +1,97 @@
 # 📌 Base Command
 
-## 🔹 Navigazione tra directory
-| Comando       | Descrizione |
+## 🔹 Directory Navigation
+| Command       | Description |
 |--------------|------------|
-| `pwd`       | Mostra il percorso della directory corrente |
-| `ls`        | Elenca i file nella directory |
-| `ls -l`     | Elenco dettagliato |
-| `ls -a`     | Mostra anche i file nascosti |
-| `cd <dir>`  | Cambia directory |
-| `cd ..`     | Torna alla directory superiore |
-| `cd ~`      | Torna alla home dell'utente |
-| `cd -`      | Torna alla directory precedente |
+| `pwd`       | Displays the current directory path |
+| `ls`        | Lists files in the directory |
+| `ls -l`     | Detailed list |
+| `ls -a`     | Also shows hidden files |
+| `cd <dir>`  | Changes directory |
+| `cd ..`     | Moves up to the parent directory |
+| `cd ~`      | Moves to the user's home directory |
+| `cd -`      | Moves back to the previous directory |
 
-## 📂 Gestione file e directory
-| Comando               | Descrizione |
+## 📂 File and Directory Management
+| Command               | Description |
 |----------------------|-------------|
-| `touch <file>`       | Crea un file vuoto |
-| `mkdir <dir>`        | Crea una directory |
-| `rm <file>`          | Cancella un file |
-| `rm -r <dir>`        | Cancella una directory e il suo contenuto |
-| `cp <file1> <file2>` | Copia un file |
-| `cp -r <dir1> <dir2>`| Copia una directory |
-| `mv <sorg> <dest>`   | Sposta o rinomina un file/directory |
-| `du -sh <dir>`       | Mostra lo spazio occupato da una directory |
-| Comando               | Descrizione |
-|----------------------|-------------|
-| `touch <file>`       | Crea un file vuoto |
-| `mkdir <dir>`        | Crea una directory |
-| `rm <file>`          | Cancella un file |
-| `rm -r <dir>`        | Cancella una directory e il suo contenuto |
-| `cp <file1> <file2>` | Copia un file |
-| `cp -r <dir1> <dir2>`| Copia una directory |
-| `mv <sorg> <dest>`   | Sposta o rinomina un file/directory |
+| `touch <file>`       | Creates an empty file |
+| `mkdir <dir>`        | Creates a directory |
+| `rm <file>`          | Deletes a file |
+| `rm -r <dir>`        | Deletes a directory and its contents |
+| `cp <file1> <file2>` | Copies a file |
+| `cp -r <dir1> <dir2>`| Copies a directory |
+| `mv <src> <dest>`    | Moves or renames a file/directory |
+| `du -sh <dir>`       | Displays the space used by a directory |
 
-## 🔍 Visualizzazione e modifica file
-| Comando           | Descrizione |
+## 🔍 Viewing and Editing Files
+| Command           | Description |
 |------------------|-------------|
-| `cat <file>`     | Mostra il contenuto di un file |
-| `tac <file>`     | Mostra il contenuto al contrario |
-| `less <file>`    | Permette la lettura di file grandi |
-| `head <file>`    | Mostra le prime 10 righe |
-| `tail <file>`    | Mostra le ultime 10 righe |
-| `tail -f <file>` | Segue in tempo reale l'output del file |
-| `nano <file>`    | Editor di testo nano |
-| `vim <file>`     | Editor di testo vim |
+| `cat <file>`     | Displays the content of a file |
+| `tac <file>`     | Displays the content in reverse order |
+| `less <file>`    | Allows reading large files |
+| `head <file>`    | Shows the first 10 lines |
+| `tail <file>`    | Shows the last 10 lines |
+| `tail -f <file>` | Follows the file output in real time |
+| `nano <file>`    | Nano text editor |
+| `vim <file>`     | Vim text editor |
 
-## 🔎 Ricerca
-| Comando                    | Descrizione |
+## 🔎 Search
+| Command                    | Description |
 |---------------------------|-------------|
-| `find <path> -name <file>` | Cerca un file per nome |
-| `grep "testo" <file>`     | Cerca una parola in un file |
-| `grep -r "testo" <dir>`   | Cerca ricorsivamente in una directory |
+| `find <path> -name <file>` | Searches for a file by name |
+| `grep "text" <file>`     | Searches for a word in a file |
+| `grep -r "text" <dir>`   | Recursively searches in a directory |
 
-## 🛠️ Permessi e proprietà
-| Comando                    | Descrizione |
+## 🛠️ Permissions and Ownership
+| Command                    | Description |
 |---------------------------|-------------|
-| `chmod 755 <file>`        | Cambia i permessi di un file |
-| `chown user:group <file>` | Cambia il proprietario di un file |
+| `chmod 755 <file>`        | Changes file permissions |
+| `chown user:group <file>` | Changes the owner of a file |
 
-## 📦 Gestione processi
-| Comando          | Descrizione |
+## 📦 Process Management
+| Command          | Description |
 |-----------------|-------------|
-| `ps aux`       | Mostra i processi in esecuzione |
-| `kill <PID>`   | Termina un processo con il suo PID |
-| `killall <nome>`| Termina tutti i processi con un dato nome |
-| `top`          | Mostra i processi attivi in tempo reale |
-| `htop`         | Versione avanzata di top |
+| `ps aux`       | Displays running processes |
+| `kill <PID>`   | Terminates a process by its PID |
+| `killall <name>`| Terminates all processes with a given name |
+| `top`          | Displays active processes in real time |
+| `htop`         | Advanced version of top |
 
-## 📡 Rete
-| Comando            | Descrizione |
+## 📡 Network
+| Command            | Description |
 |-------------------|-------------|
-| `ping <host>`     | Controlla la connettività con un host |
-| `ifconfig`        | Mostra le informazioni di rete (deprecato, usa ip addr) |
-| `ip addr show`    | Mostra gli indirizzi IP |
-| `netstat -tulnp`  | Mostra porte aperte e servizi in ascolto |
+| `ping <host>`     | Checks connectivity with a host |
+| `ifconfig`        | Displays network information (deprecated, use ip addr) |
+| `ip addr show`    | Displays IP addresses |
+| `netstat -tulnp`  | Shows open ports and listening services |
 
-## 💾 Gestione pacchetti
+## 💾 Package Management
 ### Debian/Ubuntu
-| Comando                | Descrizione |
+| Command                | Description |
 |-----------------------|-------------|
-| `apt update`         | Aggiorna l'indice dei pacchetti |
-| `apt upgrade`        | Aggiorna i pacchetti installati |
-| `apt install <pkg>`  | Installa un pacchetto |
-| `apt remove <pkg>`   | Rimuove un pacchetto |
+| `apt update`         | Updates the package index |
+| `apt upgrade`        | Upgrades installed packages |
+| `apt install <pkg>`  | Installs a package |
+| `apt remove <pkg>`   | Removes a package |
 
 ### CentOS/RHEL
-| Comando                | Descrizione |
+| Command                | Description |
 |-----------------------|-------------|
-| `yum install <pkg>`  | Installa un pacchetto |
-| `yum remove <pkg>`   | Rimuove un pacchetto |
+| `yum install <pkg>`  | Installs a package |
+| `yum remove <pkg>`   | Removes a package |
 
-## 🛠️ Gestione dischi
-| Comando            | Descrizione |
+## 🛠️ Disk Management
+| Command            | Description |
 |-------------------|-------------|
-| `df -h`         | Mostra lo spazio libero su disco in modo leggibile |
-| `du -sh <dir>`  | Mostra lo spazio occupato da una directory |
-| `fdisk -l`      | Mostra le informazioni sulle partizioni del disco |
-| `mount <dev> <mnt>` | Monta un dispositivo su un punto di mount |
-| `umount <mnt>`  | Smonta un dispositivo |
+| `df -h`         | Displays free disk space in a readable format |
+| `du -sh <dir>`  | Displays the space used by a directory |
+| `fdisk -l`      | Shows partition information |
+| `mount <dev> <mnt>` | Mounts a device to a mount point |
+| `umount <mnt>`  | Unmounts a device |
 
-## 🏁 Uscita
-| Comando    | Descrizione |
+## 🏁 Exit
+| Command    | Description |
 |-----------|-------------|
-| `exit`   | Esce dalla sessione terminale |
-| `logout` | Disconnette l'utente |
+| `exit`   | Exits the terminal session |
+| `logout` | Logs out the user |
