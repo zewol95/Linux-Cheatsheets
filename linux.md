@@ -24,6 +24,33 @@
 | `mv <src> <dest>`    | Moves or renames a file/directory |
 | `du -sh <dir>`       | Displays the space used by a directory |
 
+## 👥 Group Management
+| Command                        | Description |
+|--------------------------------|-------------|
+| `groupadd <groupname>`         | Creates a new group |
+| `groupdel <groupname>`         | Deletes a group |
+| `groupmod -n <newname> <oldname>` | Renames a group |
+
+## 🔄 Assigning Users to Groups
+| Command                                    | Description |
+|--------------------------------------------|-------------|
+| `usermod -aG <groupname> <username>`      | Adds a user to a group (append) |
+| `gpasswd -a <username> <groupname>`       | Adds a user to a group |
+| `gpasswd -d <username> <groupname>`       | Removes a user from a group |
+| `id <username>`                            | Displays user ID (UID) and group ID (GID) |
+| `groups <username>`                        | Shows groups a user belongs to |
+| `getent group <groupname>`                 | Lists members of a specific group |
+
+## 🛠️ Special Groups and Sudo Privileges
+| Command                                    | Description |
+|--------------------------------------------|-------------|
+| `usermod -aG sudo <username>`             | Grants sudo privileges to a user (Debian/Ubuntu) |
+| `usermod -aG wheel <username>`            | Grants sudo privileges to a user (RHEL/CentOS) |
+| `visudo`                                   | Edits the sudoers file securely |
+| `whoami`                                   | Displays the current user |
+| `who`                                      | Shows who is logged in |
+| `w`                                        | Displays active users and their processes |
+
 ## 🔍 Viewing and Editing Files
 | Command           | Description |
 |------------------|-------------|
