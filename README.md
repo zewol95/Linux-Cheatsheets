@@ -6,4 +6,4 @@ Continuously updated.
 | **Link** | **Description** |
 |----------|-----------------|
 | [Basic Command](https://github.com/zewol95/Linux-Cheatsheets/blob/main/linux.md) | Basic Commands of Linux. |
-| [ZFS](https://github.com/zewol95/Linux-Cheatsheets/blob/main/zfs) | Zfs dedicated commands |
+| [ZFS](https://github.com/zewol95/Linux-Cheatsheets/blob/main/zfs.md) | Zfs dedicated commands |
