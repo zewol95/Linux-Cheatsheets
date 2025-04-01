@@ -1,4 +1,4 @@
-# 📌 Base Command
+# 📌 Basic Command
 
 ## 🔹 Directory Navigation
 | Command       | Description |
