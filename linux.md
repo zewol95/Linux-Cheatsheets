@@ -45,11 +45,8 @@
 | Command                                    | Description |
 |--------------------------------------------|-------------|
 | `usermod -aG sudo <username>`             | Grants sudo privileges to a user (Debian/Ubuntu) |
-| `usermod -aG wheel <username>`            | Grants sudo privileges to a user (RHEL/CentOS) |
-| `visudo`                                   | Edits the sudoers file securely |
 | `whoami`                                   | Displays the current user |
 | `who`                                      | Shows who is logged in |
-| `w`                                        | Displays active users and their processes |
 
 ## 🔍 Viewing and Editing Files
 | Command           | Description |
@@ -93,20 +90,14 @@
 | `ip addr show`    | Displays IP addresses |
 | `netstat -tulnp`  | Shows open ports and listening services |
 
-## 💾 Package Management
-### Debian/Ubuntu
+## 💾 Package Management (Debian/Ubuntu)
+
 | Command                | Description |
 |-----------------------|-------------|
 | `apt update`         | Updates the package index |
 | `apt upgrade`        | Upgrades installed packages |
 | `apt install <pkg>`  | Installs a package |
 | `apt remove <pkg>`   | Removes a package |
-
-### CentOS/RHEL
-| Command                | Description |
-|-----------------------|-------------|
-| `yum install <pkg>`  | Installs a package |
-| `yum remove <pkg>`   | Removes a package |
 
 ## 🛠️ Disk Management
 | Command            | Description |
