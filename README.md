@@ -1,5 +1,7 @@
 # Linux-Cheatsheets
-A collection of cheat sheets for Linux, Docker and more.
+A personal collection of Linux command cheatsheets for quick reference. \
+Covers essential commands for file management, networking, system monitoring, and more. \
+Continuously updated.
 
 | **Link** | **Description** |
 |----------|-----------------|
